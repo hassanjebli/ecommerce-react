@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HeroSection = () => {
   return (
     <div className="bg-primary text-white text-center d-flex align-items-center vh-100">
@@ -6,9 +8,9 @@ const HeroSection = () => {
         <p className="lead">
           Discover the best collections curated just for you.
         </p>
-        <a href="/app/collections" className="btn btn-light btn-lg mt-3">
+        <Link to={"/app/collections"} className="btn btn-light btn-lg mt-3">
           Shop Now
-        </a>
+        </Link>
       </div>
     </div>
   );
